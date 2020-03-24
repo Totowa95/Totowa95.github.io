@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
-        speed: 1200,
+        speed: 600,
         adaptiveHeight: true,
+        draggable: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/carousel_icons/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/carousel_icons/right.png"></button>',
         // адаптация карусели
@@ -10,6 +11,7 @@ $(document).ready(function(){
                 breakpoint: 992,
                 settings: {
                     dots: true,
+                    draggable: true,
                     arrows: false
                 }
             }

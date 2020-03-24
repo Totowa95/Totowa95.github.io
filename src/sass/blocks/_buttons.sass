@@ -9,6 +9,15 @@
     text-align: center
     color: #ffffff
     text-transform: uppercase
+    transition: 0.2s all
+    &:hover
+        -webkit-transform: scale(1.1)
+        -ms-transform: scale(1.1)
+        transform: scale(1.1)
+        // color: $main-color
+        background: none  
+        border: 2px solid $main-color
+        
     &_main
         width: 300px
         height: 50px
@@ -22,4 +31,6 @@
         width: 131px
         height: 40px
         font-size: 14px
+        &:hover
+            color: black
        
