@@ -1,7 +1,11 @@
 @import 'base/variables'
-    
+  
 *
     font-family: 'Museo Sans Cyrl', sans-serif
+    // убрать синюю обводку
+    &:active, &:focus
+        outline: none !important
+        
 .container
     max-width: 950px
     margin: 0 auto
@@ -17,3 +21,4 @@
 @import 'blocks/catalog'
 @import 'blocks/reviews'
 @import 'blocks/footer'
+@import 'blocks/modal'
