@@ -93,4 +93,20 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+38 (999) 999-99-99");
 
+    // отправка письма с сайта
+    $('form').submit(function(e) {
+        e.preventDefault(); //отменяет стандартное поведение браузера
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
   });
