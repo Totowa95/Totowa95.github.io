@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section class="promo" id="up">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -70,7 +71,7 @@
                     
                 </div>
                 <div class="advantages__items">
-                    <img src="icons/second_page_icons/heart.png" alt="2" class="advantages__icon">
+                    <img src="icons/second_page_icons/heart.png" alt="2" class="advantages__icon advantages__icon_animated">
                     Заботимся о здоровье
                     <div class="advantages__sub">Мы работаем для того,<br> 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в<br> радость Вам и Вашим близким!</div>
@@ -372,18 +373,18 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__review">
+            <div class="reviews__review fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="icons/reviews/1.png" alt="Photo">
                 <div class="reviews__descr">
                     <div class="reviews__name">Ирина Иванченко<span>2 полумарафона</span></div>
-                    <div class="reviews__text">
+                    <div class="reviews__text reviews__text">
                         <p>Не знала, что себе купить - обратилась к ребятам из   RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.</p>
                         <p>Новые цели - новый гаджет!</p>
                         <p>Спасибо, RunSmart! </p>
                     </div>
                 </div>
             </div>
-            <div class="reviews__review">
+            <div class="reviews__review fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="icons/reviews/2.png" alt="Photo">
                 <div class="reviews__descr">
                     <div class="reviews__name">Иван Сёмочкин <span>1 полумарафон</span> </div>
@@ -393,7 +394,7 @@
                     </div>
                 </div>
             </div>
-            <div class="reviews__review">
+            <div class="reviews__review fadeInUp wow " data-wow-duration="2s" data-wow-delay="1s">
                 <img src="icons/reviews/3.png" alt="Photo">
                 <div class="reviews__descr">
                     <div class="reviews__name">Юлия Дашкина <span>2 полумарафона</span></div>
@@ -458,12 +459,15 @@
             <div class="modal__descr">Наш менеджер свяжется с вами <br>в ближайшее время! </div>
         </div>
     </div>
+    <a href="#up" class="pageup"><img src="icons/pageup.svg" alt="pageup"></a>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js">
     </script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
